@@ -30,6 +30,7 @@ public class SamplePageTest {
         driver.get("https://www.testandquiz.com/selenium/testing.html");
 		
 	}
+	//
 	@Test
 	public void findElementByLinkText() {
 		driver.findElement(By.linkText("This is a link")).click();
@@ -55,7 +56,7 @@ public class SamplePageTest {
 	}
 	
 	//usando css selector pra achar a CheckBox e marcar
-	
+	@Test
 	public void usingCssSelectorToFindCheckBoxAndCheckIt() {
 		driver.findElement(By.cssSelector("input.Automation")).click();
 	}
